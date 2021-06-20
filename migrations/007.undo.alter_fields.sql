@@ -1,0 +1,4 @@
+ALTER TABLE fields DROP COLUMN IF EXISTS type;
+ALTER TABLE fields DROP COLUMN IF EXISTS category;
+DROP TYPE IF EXISTS field_type;
+DROP TYPE IF EXISTS field_category;

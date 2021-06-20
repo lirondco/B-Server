@@ -1,0 +1,3 @@
+ALTER TABLE accounts DROP COLUMN IF EXISTS type;
+
+DROP TYPE IF EXISTS account_type;
