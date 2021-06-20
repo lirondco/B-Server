@@ -1,6 +1,6 @@
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE TABLE fields (
-    id uuid DEFAULT uuid_generate_v4 (),
+    id uuid DEFAULT uuid_generate_v4 () UNIQUE,
     key TEXT NOT NULL,
     userId uuid
       REFERENCES users(id) ON DELETE CASCADE NOT NULL,
